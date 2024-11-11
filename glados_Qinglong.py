@@ -1,10 +1,10 @@
 import requests,json,os
 
 # pushplus秘钥
-sckey = os.environ。get("PUSHPLUS_TOKEN"， "")
+sckey = os.environ.get("PUSHPLUS_TOKEN", "")
 sendContent = ''
 # glados账号cookie
-cookies= os.environ。get("GLADOS_COOKIE"， [])。split("&")
+cookies= os.environ.get("GLADOS_COOKIE", []).split("&")
 if cookies[0] == "":
     print('未获取到COOKIE变量') 
     cookies = []
